@@ -9,7 +9,7 @@
 ;-iadc    ;;;uncomment -iadc if realtime audio input is needed too
 
 ; For Non-realtime ouput leave only the line below:
-;-o /home/deklanowski/Alex/vdelayfb/vdelayfb.wav -W ;;; for file output any platform
+
 </CsOptions>
 <CsInstruments>
 
@@ -41,7 +41,7 @@ instr 1
 kFeedback = invalue:k("Feedback")
 
 ims  = 10			;maximum delay time in msec
-aout vco2 .5, 150			;make a signal
+aout vco2 0.5, 150			;make a signal
 ;adel   poscil3 ims/2, 1/p3, 1		;make an LFO
 ;adel   = adel + ims/2 			;offset the LFO so that it is positive
 
@@ -65,7 +65,7 @@ endin
 
 i 1 0 20
 
-e
+
 </CsScore>
 </CsoundSynthesizer>  
 <bsbPanel>

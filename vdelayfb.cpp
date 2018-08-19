@@ -132,5 +132,5 @@ struct VDelayFB : csnd::Plugin<1, 4> {
  * @param csound engine instance
  */
 void csnd::on_load(Csound *csound) {
-    csnd::plugin<VDelayFB>(csound, "vdelayfb", "a", "aaii", thread::ia);
+    csnd::plugin<VDelayFB>(csound, "vdelayfb", "a", "aaik", thread::ia);
 }
