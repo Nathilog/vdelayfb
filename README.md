@@ -30,6 +30,8 @@ asig -- Input signal.
 
 adel -- Current value of delay in milliseconds. Note that linear functions have no pitch change effects. Fast changing values of adel will cause discontinuities in the waveform resulting noise. 
 
+kFeedback - Current value of the feedback ratio ranging from 0 to 1. If kFeedback is greater than 1 it will remain at 1. If it is less than 0 it will remain at 0.
+
 
 Please see the sample .csd files included in this project for opcode usage.
 +
