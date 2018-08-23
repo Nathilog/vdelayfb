@@ -34,4 +34,42 @@ kFeedback - Current value of the feedback ratio ranging from 0 to 1. If kFeedbac
 
 
 Please see the sample .csd files included in this project for opcode usage.
-+
+### Example of the vdelayfb opcode
+```
+<CsoundSynthesizer>
+<CsOptions>
+--opcode-lib=vdelayfb.dylib
+</CsOptions>
+<CsInstruments>
+
+sr = 44100
+ksmps = 128
+nchnls = 2
+0dbfs = 1.0
+
+instr 1
+
+aSigIn vco2 0.3,440
+
+adel randomi 0.5,5,12
+
+imax = 30
+
+aDel vdelayfb aSigIn,adel,imax,0.1
+
+aMix = aDel+aSigIn
+
+   outs aMix,aMix
+
+endin
+
+
+</CsInstruments>
+<CsScore>
+i 1 0 20
+</CsScore>
+</CsoundSynthesizer>
+```
+
+
+
