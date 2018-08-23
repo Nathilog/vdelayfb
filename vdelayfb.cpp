@@ -43,9 +43,10 @@ struct VDelayFB : csnd::Plugin<1, 4> {
         m_delay.allocate(csound, n);
 
         m_feedback = 0;
-	if (m_feedback < 0) {m_feedback = 0;}
 	
-	else if (m_feedback < 0) {m_feedback = 0;}
+	
+
+       
 
         return OK;
     }

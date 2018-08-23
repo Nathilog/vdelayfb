@@ -94,7 +94,7 @@ i 1 0 20
   <midicc>0</midicc>
   <minimum>0.01000000</minimum>
   <maximum>0.80000000</maximum>
-  <value>0.01000000</value>
+  <value>0.70520000</value>
   <mode>lin</mode>
   <mouseControl act="jump">continuous</mouseControl>
   <resolution>0.01000000</resolution>
@@ -141,7 +141,7 @@ i 1 0 20
   <midicc>0</midicc>
   <minimum>0.00000000</minimum>
   <maximum>1.00000000</maximum>
-  <value>0.87000000</value>
+  <value>0.94000000</value>
   <mode>lin</mode>
   <mouseControl act="jump">continuous</mouseControl>
   <resolution>0.01000000</resolution>
@@ -186,7 +186,7 @@ i 1 0 20
   <visible>true</visible>
   <midichan>0</midichan>
   <midicc>0</midicc>
-  <label>0.010</label>
+  <label>0.705</label>
   <alignment>left</alignment>
   <font>Arial</font>
   <fontsize>14</fontsize>
@@ -215,7 +215,7 @@ i 1 0 20
   <visible>true</visible>
   <midichan>0</midichan>
   <midicc>0</midicc>
-  <label>0.870</label>
+  <label>0.940</label>
   <alignment>left</alignment>
   <font>Arial</font>
   <fontsize>14</fontsize>
@@ -275,7 +275,7 @@ i 1 0 20
   <midicc>0</midicc>
   <minimum>0.00100000</minimum>
   <maximum>0.00800000</maximum>
-  <value>0.00758000</value>
+  <value>0.00632000</value>
   <mode>lin</mode>
   <mouseControl act="jump">continuous</mouseControl>
   <resolution>0.01000000</resolution>
@@ -291,7 +291,7 @@ i 1 0 20
   <visible>true</visible>
   <midichan>0</midichan>
   <midicc>0</midicc>
-  <label>0.008</label>
+  <label>0.006</label>
   <alignment>left</alignment>
   <font>Arial</font>
   <fontsize>14</fontsize>
