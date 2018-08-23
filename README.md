@@ -18,5 +18,18 @@ c++ -dynamiclib  -std=c++11 -o plug.dylib vdelayfb.cpp -I /Library/Frameworks/Cs
 gcc -O2 -shared -o libvdelayfb.so -fPIC vdelayfb.cpp -I/usr/local/include/csound
 ```
 
+### Parameters
+```
+aDel vdelayfb aIn adel imaxdel kfeedback
+```
+### Initialization 
+imaxdel -- Maximum value of delay in milliseconds. If adel gains a value greater than imaxdel it is folded around imaxdel. This should not happen. 
+
+### Performance 
+asig -- Input signal.
+
+adel -- Current value of delay in milliseconds. Note that linear functions have no pitch change effects. Fast changing values of adel will cause discontinuities in the waveform resulting noise. 
+
+
 Please see the sample .csd files included in this project for opcode usage.
 +
