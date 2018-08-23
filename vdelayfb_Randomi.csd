@@ -15,7 +15,7 @@ instr 1
 
 aSigIn vco2 0.3,440 ;Simple sawtooth wave
 
-adel randomi 0.5,5,12 ;The delay time is varied using randomi to generate values 
+adel randomi 0.5,5,3 ;The delay time is varied using randomi to generate values 
 
 imax = 30 ;Max delay time set to thirty seconds
 
