@@ -51,15 +51,18 @@ nchnls = 2
 
 instr 1
 
-aSigIn _vco2_ 0.3,440 ;Simple sawtooth wave
+aSigIn vco2 0.3,440 ;Simple sawtooth wave
 
-adel randomi 0.5,5,3 ;The delay time is varied using randomi to generate values 
+;The delay time is varied using randomi to generate values 
+adel randomi 0.5,5,3 
 
-imax = 30 ;Max delay time set to thirty seconds
+;Max delay time set to thirty seconds
+imax = 30 
 
 aDel vdelayfb aSigIn,adel,imax,0.1
 
-aMix = aDel+aSigIn ;Dry signal is mixed with the delayed signal
+;Dry signal is mixed with the delayed signal
+aMix = aDel+aSigIn
 
    outs aMix,aMix ;Stereo out
 
