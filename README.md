@@ -51,7 +51,7 @@ nchnls = 2
 
 instr 1
 
-aSigIn vco2 0.3,440 ;Simple sawtooth wave
+aSigIn _vco2_ 0.3,440 ;Simple sawtooth wave
 
 adel randomi 0.5,5,3 ;The delay time is varied using randomi to generate values 
 
