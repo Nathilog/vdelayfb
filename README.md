@@ -4,10 +4,6 @@ A CSound opcode that implements variable delay with optional feedback. The opcod
 This is designed for a-rate delay input only. The convenience of a feedback parameter means that we can for example create chorus effects either directly in an instrument or as a UDO an easily apply a feedback component easily to get a chorus/flanging effect. In addition this is a nice example of how the CPOF greatly simplifies opcode development through code reuse allowing the developer to focus on the business end of the opcode.
 
 
-## Building
-This project was built using JetBrains CLion IDE which is cmake based. However we only need to include CSound headers when building plugins with CPOF so you could build the dynamic library/.so from the command line as follows:
-
-
 ### Mac
 ```
 c++ -dynamiclib  -std=c++11 -o plug.dylib vdelayfb.cpp -I /Library/Frameworks/CsoundLib64.framework/Headers
